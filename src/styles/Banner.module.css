@@ -1,0 +1,50 @@
+.Banner{
+  height:85vh;
+  width:100%;
+  background-repeat: no-repeat;
+  position:relative;
+  background-size: auto;
+  margin-bottom:150px;
+}
+
+
+.progress{
+  height:4px;
+
+}
+
+.progressBar{
+  background-color:#2b5aa5;
+
+}
+
+
+.info{
+  position:absolute;
+  bottom:5%;
+  left:5%;
+  text-align:left;
+  color:white;
+
+
+}
+
+.tag{
+  font-size:22px;
+  font-weight:500;
+  text-align:left;
+  margin-left:0px;
+}
+
+.movie-title{
+  font-weight:bold;
+  font-size:25px;
+  text-transform: uppercase;
+  text-align:left;
+  margin: 0px;
+}
+
+.details{
+  font-size:18px;
+  font-weight:700;
+}

@@ -1,0 +1,74 @@
+.movie{
+
+
+}
+
+
+.banner{
+  height:90vh;
+  width:100%;
+  position:relative;
+
+}
+
+
+.detailsWrapper{
+  position:relative;
+  margin-top:50px;
+  text-align: left;
+
+}
+
+.back{
+  position:absolute;
+  opacity:0.9;
+  left:50px;
+  top:20px;
+  cursor:pointer;
+  z-index:1;
+}
+
+.movieCard{
+  height:190px;
+  width:126px;
+  border-radius: 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display:inline-block;
+  margin-right:20px;
+}
+
+.details{
+display:inline-block;
+
+}
+
+.movieTitle{
+  font-size:30px;
+  font-weight:bold;
+}
+.released{
+  font-size:20px;
+
+}
+.vote{
+  font-size:20px;
+
+}
+
+.overview{
+  font-size:18px;
+}
+
+.synopsis{
+
+  margin: 50px 150px 100px;
+}
+
+.tagSynopsis{
+
+  font-weight:400;
+  font-size:25px;
+  letter-spacing:5px;
+
+}

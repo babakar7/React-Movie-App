@@ -1,0 +1,28 @@
+.homelink {
+  color:white;
+  cursor:pointer;
+  font-size:25px;
+  font-weight:500;
+  margin-left: 20px;
+  left:50px;
+  font-weight: bold;
+
+}
+.searchbar{
+  display:inline-block;
+  vertical-align: top;
+  width:75%;
+
+}
+
+.searchfield{
+  display:inline-block;
+  width:40%;
+  border-radius:20px;
+  font-size:14px;
+  margin-left:30%;
+}
+
+.Header{
+  padding: 30px;
+}

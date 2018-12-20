@@ -1,28 +1,58 @@
-import React from 'react'
+import React, {Component} from 'react'
 import styles from '../styles/Header.module.css'
+import { withRouter } from "react-router"
+import {Link} from 'react-router-dom'
 
-const Header = () => {
 
-  return (
 
-    <div className="nav">
+class Header extends Component {
 
-    <span class="homelink"> MoviePhile</span>
 
-    <div class="searchbar">
+    state = {
 
-        <form >
+      query: null
+    }
 
-          <input type="text" class="form-control search-field"  placeholder="Search movies..."/>
+
+    handleChange = (e) => {
+      this.setState({query: e.target.value})
+    }
+
+
+  submitHandle = (e) => {
+      e.preventDefault();
+      this.props.history.push({pathname:'/results', search:'?search='+this.state.query})
+
+  }
+  render(){
+
+    console.log(this.props)
+
+
+    return(
+      <div className={styles.Header}>
+
+      <Link to="/">
+      <span className={styles.homelink}> MoviePhile</span>
+      </Link>
+
+      <div className={styles.searchbar}>
+
+        <form onSubmit={this.submitHandle}>
+
+          <input type="text" className={styles.searchfield + ' form-control'}
+              placeholder="Search movies..."
+              onChange={this.handleChange}
+              />
 
         </form>
 
-        </div>
+          </div>
 
-    </div>
+      </div>
+    )
+  }
 
-  )
 }
 
-
-export default Header
+export default withRouter(Header)
