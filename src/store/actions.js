@@ -21,8 +21,6 @@ import axios from 'axios'
 
 
    export const saveConfig = (config) =>{
-
-     console.log({config})
       return {
         type:'STORE_RESULT',
         getConfig:config

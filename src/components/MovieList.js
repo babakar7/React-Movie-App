@@ -2,6 +2,12 @@ import React, {Component} from 'react'
 import MovieCard from './MovieCard'
 import styles from '../styles/MovieList.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
+import '../styles/MovieList.css'
+import { CSSTransitionGroup } from 'react-transition-group'
+import FlipMove from 'react-flip-move';
+
+
 
 
 
@@ -92,7 +98,15 @@ class MovieList extends Component{
 
             <div className={styles.rowsize + ' row'}>
 
+
+
+
+
                 {movielist.slice(this.state.start, this.state.end)}
+
+
+
+
 
             </div>
 

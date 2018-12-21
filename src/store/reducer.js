@@ -1,13 +1,7 @@
-import {store} from '../index.js'
-
-
 const initalState = {
 
   config:{}
 }
-
-
-
 
 
 const reducer = (state= initalState, action) => {

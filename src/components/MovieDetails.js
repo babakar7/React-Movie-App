@@ -94,7 +94,6 @@ class MovieDetails extends Component {
 
             </div>
 
-            <Footer></Footer>
         </div>
       )
   }
