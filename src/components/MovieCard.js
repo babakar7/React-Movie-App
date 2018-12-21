@@ -6,7 +6,6 @@ import {Link} from 'react-router-dom'
 
 const MovieCard = (props) => {
 
-  console.log('MOVIE CARD PROPS', props)
 
   let posterpath  =   props.config ?  props.config.base_url+
               props.config.poster_sizes[1] +
